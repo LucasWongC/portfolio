@@ -31,15 +31,73 @@
   </head>
 
   <body>
+    <div>
+      <header class="header">
+        <div class="header__content">
+          <div class="header__logo-container">
+            <div class="header__logo-img-cont">
+              <img
+                src="./assets/img/profile.jpg"
+                alt="Lucas Wong Profile Image"
+                class="header__logo-img"
+              />
+            </div>
+            <span class="header__logo-sub">Lucas Wong</span>
+          </div>
+          <div class="header__main">
+            <ul class="header__links">
+              <li class="header__link-wrapper">
+                <a href="#home" class="header__link"> Home </a>
+              </li>
+              <li class="header__link-wrapper">
+                <a href="#about" class="header__link">About </a>
+              </li>
+              <li class="header__link-wrapper">
+                <a href="#projects" class="header__link"> Projects </a>
+              </li>
+              <li class="header__link-wrapper">
+                <a href="#contact" class="header__link"> Contact </a>
+              </li>
+            </ul>
+            <div class="header__main-ham-menu-cont">
+              <img
+                src="./assets/svg/ham-menu.svg"
+                alt="hamburger menu"
+                class="header__main-ham-menu"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="header__sm-menu">
+          <div class="header__sm-menu-content">
+            <ul class="header__sm-menu-links">
+              <li class="header__sm-menu-link">
+                <a href="./index.html"> Home </a>
+              </li>
+
+              <li class="header__sm-menu-link">
+                <a href="./index.html#about"> About </a>
+              </li>
+
+              <li class="header__sm-menu-link">
+                <a href="./index.html#projects"> Projects </a>
+              </li>
+
+              <li class="header__sm-menu-link">
+                <a href="./index.html#contact"> Contact </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </div>
     <div id="particles-js">
-      <div class="header">
+      <div class="main" id="home">
         <h1>
           <span class="site-title">Lucas Wong</span>
-          <span class="site-description">
-            Full Stack Developer | Blockchain Developer
-          </span>
+          <span class="site-description"> Senior Front-End Developer </span>
         </h1>
-        <div class="header-icons">
+        <div class="link-icons">
           <a
             aria-label="My LinkedIn Profile"
             target="_blank"
@@ -68,14 +126,7 @@
             ><i class="icon fa fa-envelope"></i>
           </a>
         </div>
-        <div class="header-links">
-          <a class="link" href="#about" data-scroll>About Me</a>
-          <a class="link" href="#projects" data-scroll>Projects</a>
-        </div>
       </div>
-      <a class="down" href="#about" data-scroll
-        ><i class="icon fa fa-chevron-down" aria-hidden="true"></i
-      ></a>
     </div>
 
     <!-- About Section -->
@@ -94,12 +145,12 @@
           <img
             src="./assets/img/LW.jpg"
             alt="Professional Me"
-            width="20%"
+            width="15%"
             style="border-radius: 50%"
           />
         </picture>
         <p>
-          I am a professional full stack developer with 7 years of hands-on
+          I am a professional frontend developer with 7 years of hands-on
           experience in implementing applications and solutions using various
           technologies and programming languages. Experience in Blockchain
           technology for 3 years as well. Excellent problem-solving skills and
@@ -115,10 +166,12 @@
         <div class="tech">
           <h2>Languages</h2>
           <i class="devicon-html5-plain-wordmark colored"></i>
-          <i class="devicon-php-plain colored"></i>
           <i class="devicon-javascript-plain colored"></i>
           <i class="devicon-typescript-plain colored"></i>
+          <i class="devicon-php-plain colored"></i>
+          <i class="devicon-python-plain colored"></i>
           <i class="devicon-solidity-plain"></i>
+          <i class="devicon-rust-plain colored"></i>
         </div>
 
         <!-- Technology Stack #2: Front-End -->
@@ -128,8 +181,12 @@
           <i class="devicon-sass-original colored"></i>
           <i class="devicon-bootstrap-plain-wordmark colored"></i>
           <i class="devicon-jquery-plain-wordmark colored"></i>
+          <i class="devicon-tailwindcss-plain colored"></i>
           <i class="devicon-react-original-wordmark colored"></i>
+          <i class="devicon-redux-original colored"></i>
           <i class="devicon-nextjs-original colored"></i>
+          <i class="devicon-vuejs-plain-wordmark colored"></i>
+          <i class="devicon-materialui-plain colored"></i>
         </div>
 
         <!-- Technology Stack #3: Back-End -->
@@ -137,6 +194,7 @@
           <h2>Back-End</h2>
           <i class="devicon-nodejs-plain colored"></i>
           <i class="devicon-express-original-wordmark colored"></i>
+          <i class="devicon-nestjs-plain colored"></i>
           <i class="devicon-laravel-plain-wordmark colored"></i>
           <i class="devicon-mysql-plain-wordmark colored"></i>
           <i class="devicon-postgresql-plain-wordmark colored"></i>
@@ -149,6 +207,13 @@
           <i class="devicon-git-plain-wordmark"></i>
           <i class="devicon-vscode-plain-wordmark colored"></i>
           <i class="devicon-github-original colored"></i>
+          <i class="devicon-heroku-plain-wordmark colored"></i>
+          <i class="devicon-digitalocean-plain colored"></i>
+          <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+          <i class="devicon-firebase-plain colored"></i>          
+          <i class="devicon-trello-plain colored"></i>          
+          <i class="devicon-photoshop-plain colored"></i>
+          <i class="devicon-figma-plain colored"></i>
         </div>
       </div>
     </section>
@@ -158,7 +223,7 @@
       <div class="user-details">
         <h1>My Projects</h1>
       </div>
-      
+
       <div class="projects-container">
         <!-- User Project #1: Personal Résumé Website -->
         <div class="user-projects">
@@ -235,11 +300,7 @@
                   srcset="./assets/img/nftb.png"
                   alt="nftb"
                 />
-                <a
-                  class="project-link"
-                  target="_blank"
-                  href="https://nftb.io/"
-                >
+                <a class="project-link" target="_blank" href="https://nftb.io/">
                   <img alt="nftb" src="./assets/img/nftb.png" />
                 </a>
               </picture>
@@ -249,10 +310,64 @@
       </div>
     </section>
 
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h1>Contact</h1>
+        <div class="contact__form-container">
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            class="contact__form"
+          >
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Enter Your Email"
+                type="text"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <p>&copy; Lucas Wong, 2022</p>
     </footer>
 
+    <!-- Import JS: Font Awesome-->
+    <script src="https://use.fontawesome.com/710870053b.js"></script>
     <!-- Import JS: Particles Theme -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- Import JS: Sweet Scroll -->
@@ -261,5 +376,7 @@
     <script src="./assets/js/google-analytics.js"></script>
     <!-- Import JS: Main Script -->
     <script src="./assets/js/main.js"></script>
+    <!-- Import JS: Header Script -->
+    <script src="./assets/js/header.js"></script>
   </body>
 </html>
