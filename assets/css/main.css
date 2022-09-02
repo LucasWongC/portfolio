@@ -281,13 +281,16 @@ template {
     margin-right: 1rem;
   }
 }
-.header__logo-img {
-  width: 100%;
-  height: 100%;
+.profile-img {
   object-fit: cover;
   object-position: center;
   display: block;
 }
+.header__logo-container .profile-img {
+  width: 100%;
+  height: 100%;
+}
+
 .header__logo-sub {
   /* font-size: 1.8rem; */
   text-transform: uppercase;
@@ -534,6 +537,12 @@ template {
 
 .user-details p {
   font-size: 1.5em;
+}
+
+.user-details .profile-img {
+  border-radius: 50%;
+  margin: auto;
+  transform: scaleX(-1);
 }
 
 #projects {
