@@ -2,6 +2,10 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
 @import url(https://fonts.googleapis.com/css?family=Rubik);
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   line-height: 1.5;
   -ms-text-size-adjust: 100%;
@@ -251,11 +255,7 @@ template {
   justify-content: space-between;
   padding: 0 8rem;
 }
-@media only screen and (max-width: 56.25em) {
-  .header__content {
-    padding: 0 2rem;
-  }
-}
+
 .header__logo-container {
   display: flex;
   align-items: center;
@@ -271,14 +271,14 @@ template {
   height: 4rem;
   border-radius: 50px;
   overflow: hidden;
-  margin-right: 1.5rem;
+  margin-right: 1.2rem;
   background: #0062b9;
 }
 @media only screen and (max-width: 56.25em) {
   .header__logo-img-cont {
     width: 4.5rem;
     height: 4.5rem;
-    margin-right: 1.2rem;
+    margin-right: 1rem;
   }
 }
 .header__logo-img {
@@ -296,16 +296,16 @@ template {
 }
 .header__links {
   display: flex;
+  padding-inline-start: 0;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 56.25em) {
   .header__links {
     display: none;
   }
 }
 .header__link {
-  padding: 1.5rem 2rem;
+  padding: 1.5rem;
   display: inline-block;
-  /* font-size: 1.6rem; */
   color: #333;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -315,18 +315,18 @@ template {
 .header__link:hover {
   color: #0062b9;
 }
-@media only screen and (max-width: 56.25em) {
+/* @media only screen and (max-width: 56.25em) {
   .header__link {
     padding: 3rem 1.8rem;
     font-size: 1.5rem;
   }
-}
+} */
 .header__main-ham-menu-cont {
   display: none;
   width: 3rem;
   padding: 2.2rem 0;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 56.25em) {
   .header__main-ham-menu-cont {
     display: block;
   }
@@ -416,16 +416,16 @@ template {
 }
 
 .main .site-title {
-  font-size: 35px;
+  font-size: 50px;
   display: block;
-  line-height: 1;
+  line-height: 1.5;
   color: #fff;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 768px) {
   .main .site-title {
     margin: 0;
-    font-size: 100px;
+    font-size: 80px;
   }
 }
 
@@ -449,21 +449,21 @@ template {
   text-align: center;
 }
 
-.down,
 .link-icons .icon {
   color: #fff;
   text-align: center;
-}
-
-.link-icons .icon {
-  height: 20px;
+  box-sizing: unset;
   padding: 10px;
   border-radius: 50%;
   border: 2px solid #fff;
   transition: all 0.7s;
-  width: 20px;
-  font-size: 20px;
   margin: 5px;
+  width: 32px;
+  height: 32px;
+}
+
+.link-icons i {
+  font-size: 32px;
 }
 
 .link-icons .icon:active,
@@ -472,12 +472,11 @@ template {
   background: #fff;
 }
 
-@media only screen and (min-width: 550px) {
-  .link-icons .icon {
-    width: 35px;
-    height: 35px;
-    font-size: 35px;
-  }
+.container {
+  width: 70%;
+  margin: auto;
+  padding-top: 120px;
+  padding-bottom: 40px;
 }
 
 #home {
@@ -494,19 +493,10 @@ template {
 }
 
 #about {
-  padding-top: 150px;
-  width: 70%;
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 550px) {
-  #about {
-    width: 70%;
-  }
-}
-
 .tech {
-  width: 300px;
   margin: 10px;
 }
 
@@ -531,7 +521,7 @@ template {
   font-size: 16px;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 768px) {
   .user {
     flex-wrap: nowrap;
   }
@@ -550,17 +540,10 @@ template {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 90%;
-  max-width: 960px;
-  margin: 0 auto 100px;
-  background-image: url("/assets/img/bg_2.jpg");
+  background-color: #eeeeee;
+  margin: auto;
 }
 
-@media only screen and (min-width: 550px) {
-  #projects {
-    width: 80%;
-  }
-}
 .projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -568,12 +551,27 @@ template {
 
 .single-project {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .user-projects {
-  width: 50%;
+  width: 33.33%;
   margin: 20px auto;
-  /* padding: 10px; */
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .user-projects {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .user-projects {
+    width: 100%;
+  }
 }
 
 .user-projects img {
@@ -582,8 +580,9 @@ template {
   border-radius: 5px;
 }
 
-.user-projects h5 {
-  margin: 0;
+.user-projects h3 {
+  height: 50px;
+  margin: 4px 0;
 }
 
 .user-projects li {
@@ -593,6 +592,11 @@ template {
 
 .user-projects p {
   margin-right: 5px;
+}
+
+.user-projects .img-container {
+  height: 100%;
+  margin: 8px 0;
 }
 
 @media only screen and (min-width: 550px) {
@@ -628,7 +632,6 @@ template {
 
 .project-link {
   display: inline-block;
-  margin: 10px 0;
   padding: 5px;
   color: #1488cc;
   background-color: transparent;
@@ -659,15 +662,14 @@ template {
 }
 
 .contact .main-container {
-  margin-top: 64px;
+  width: 70%;
+  margin: 64px auto 0;
 }
 .contact__form-container {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background: white;
-  padding: 4rem;
+  padding: 48px;
   max-width: 70rem;
-  text-align: right;
-  width: 95%;
   border-radius: 5px;
   margin: auto;
 }
@@ -675,19 +677,11 @@ template {
   color: #fff;
   text-align: center;
 }
-@media only screen and (max-width: 37.5em) {
-  .contact__form-container {
-    padding: 3rem;
-  }
-}
+
 .contact__form-field {
-  margin-bottom: 4rem;
+  margin-bottom: 32px;
 }
-@media only screen and (max-width: 37.5em) {
-  .contact__form-field {
-    margin-bottom: 3rem;
-  }
-}
+
 .contact__form-label {
   color: #666;
   font-size: 1.4rem;
@@ -700,7 +694,6 @@ template {
 .contact__form-input {
   color: #333;
   padding: 1rem;
-  font-size: 1.2rem;
   width: 100%;
   border: 1px solid #ebebeb;
   letter-spacing: 0px;
@@ -715,29 +708,24 @@ template {
 }
 .contact__form-input::placeholder {
   color: #999;
-  font-size: 1.2rem;
+  margin-left: 1rem;
 }
 .contact__form-input::-webkit-input-placeholder {
   color: #999;
-  font-size: 1.2rem;
 }
 .contact__form-input:-ms-input-placeholder {
   color: #999;
-  font-size: 1.2rem;
 }
 .contact__form-input::-ms-input-placeholder {
   color: #999;
-  font-size: 1.2rem;
 }
 .contact__form-input:-moz-placeholder {
   opacity: 1;
   color: #999;
-  font-size: 1.2rem;
 }
 .contact__form-input::-moz-placeholder {
   opacity: 1;
   color: #999;
-  font-size: 1.2rem;
 }
 .contact-textarea {
   min-width: 100%;
@@ -747,7 +735,7 @@ template {
   font-size: 1.2rem;
   padding: 12px;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 576px) {
   .contact__btn {
     width: 100%;
   }

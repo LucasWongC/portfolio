@@ -33,15 +33,20 @@
     <!-- End Google Tag Manager -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'UA-126939217-2');
-  </script>
-  
+      gtag("config", "UA-126939217-2");
+    </script>
+
     <!-- Webpage Logo -->
     <link rel="shortcut icon" />
     <!-- Webpage Title -->
@@ -124,41 +129,48 @@
           <span class="site-description"> Senior Front-End Developer </span>
         </h1>
         <div class="link-icons">
-          <a
-            aria-label="My LinkedIn Profile"
-            target="_blank"
-            href="https://www.linkedin.com/in/lucas-wong-70b153235"
-          >
-            <i class="icon fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a
-            aria-label="My Github Profile"
-            target="_blank"
-            href="https://github.com/LucasWongC"
-          >
-            <i class="icon fa fa-github-alt" aria-hidden="true"></i>
-          </a>
-          <a
-            aria-label="My Résumé"
-            target="_blank"
-            href="https://drive.google.com/file/d/15SuFIj1LbmPtniNwru3VCgYTE617EQok/view"
-          >
-            <i class="icon fa fa-file-pdf-o" aria-hidden="true"></i>
-          </a>
-          <a
-            aria-label="My Skype"
-            target="_blank"
-            href="https://join.skype.com/invite/BpslfqV0kqaa"
-          >
-            <i class="icon fa fa-skype" aria-hidden="true"></i>
-          </a>
-          <a
-            aria-label="My Telegram"
-            target="_blank"
-            href="https://t.me/clox1118"
-          >
-            <i class="icon fa fa-telegram" aria-hidden="true"></i>
-          </a>
+          <span class="icon">
+            <a
+              aria-label="My LinkedIn Profile"
+              target="_blank"
+              href="https://www.linkedin.com/in/lucas-wong-70b153235"
+            >
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </span>
+
+          <span class="icon">
+            <a
+              aria-label="My Github Profile"
+              target="_blank"
+              href="https://github.com/LucasWongC"
+              ><i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+          </span>
+
+          <span class="icon"
+            ><a
+              aria-label="My Résumé"
+              target="_blank"
+              href="https://drive.google.com/file/d/15SuFIj1LbmPtniNwru3VCgYTE617EQok/view"
+              ><i class="fa fa-file-pdf-o" aria-hidden="true"></i> </a
+          ></span>
+
+          <span class="icon"
+            ><a
+              aria-label="My Skype"
+              target="_blank"
+              href="https://join.skype.com/invite/BpslfqV0kqaa"
+              ><i class="fa fa-skype" aria-hidden="true"></i></a
+          ></span>
+
+          <span class="icon"
+            ><a
+              aria-label="My Telegram"
+              target="_blank"
+              href="https://t.me/clox1118"
+              ><i class="fa fa-telegram" aria-hidden="true"></i></a
+          ></span>
         </div>
       </div>
     </div>
@@ -166,178 +178,292 @@
     <!-- About Section -->
     <section id="about">
       <!-- User Introduction-->
-      <div class="user-details">
-        <h1>Welcome to my portfolio</h1>
-        <picture>
-          <!-- <source
+      <div class="container">
+        <div class="user-details">
+          <h1>Welcome to my portfolio</h1>
+          <picture>
+            <!-- <source
             type="image/webp"
             srcset="./assets/img/webp/Professional-Picture-Me.webp"
             alt="Professional Me"
             width="20%"
             style="border-radius: 50%"
           /> -->
-          <img
-            src="./assets/img/LW.jpg"
-            alt="Professional Me"
-            width="15%"
-            style="border-radius: 50%"
-          />
-        </picture>
-        <p>
-          I am a professional frontend developer with 7 years of hands-on
-          experience in implementing applications and solutions using various
-          technologies and programming languages. Experience in Blockchain
-          technology for 3 years as well. Excellent problem-solving skills and
-          ability to perform well in a team. I am active learner – always trying
-          to stay up to date with the latest technologies. Open to remote
-          positions. Hope to work in a creative team with good culture.
-        </p>
-      </div>
-
-      <!-- User Specifics -->
-      <div class="user">
-        <!-- Technology Stack #1: Languages -->
-        <div class="tech">
-          <h2>Languages</h2>
-          <i class="devicon-html5-plain-wordmark colored"></i>
-          <i class="devicon-javascript-plain colored"></i>
-          <i class="devicon-typescript-plain colored"></i>
-          <i class="devicon-php-plain colored"></i>
-          <i class="devicon-python-plain colored"></i>
-          <i class="devicon-solidity-plain"></i>
-          <i class="devicon-rust-plain colored"></i>
+            <img
+              src="./assets/img/LW.jpg"
+              alt="Professional Me"
+              width="15%"
+              style="border-radius: 50%"
+            />
+          </picture>
+          <p>
+            I am a professional frontend developer with 7 years of hands-on
+            experience in implementing applications and solutions using various
+            technologies and programming languages. Experience in Blockchain
+            technology for 3 years as well. Excellent problem-solving skills and
+            ability to perform well in a team. I am active learner – always
+            trying to stay up to date with the latest technologies. Open to
+            remote positions. Hope to work in a creative team with good culture.
+          </p>
         </div>
 
-        <!-- Technology Stack #2: Front-End -->
-        <div class="tech">
-          <h2>Front-End</h2>
-          <i class="devicon-css3-plain-wordmark colored"></i>
-          <i class="devicon-sass-original colored"></i>
-          <i class="devicon-bootstrap-plain-wordmark colored"></i>
-          <i class="devicon-jquery-plain-wordmark colored"></i>
-          <i class="devicon-tailwindcss-plain colored"></i>
-          <i class="devicon-react-original-wordmark colored"></i>
-          <i class="devicon-redux-original colored"></i>
-          <i class="devicon-nextjs-original colored"></i>
-          <i class="devicon-vuejs-plain-wordmark colored"></i>
-          <i class="devicon-materialui-plain colored"></i>
-        </div>
+        <!-- User Specifics -->
+        <div class="user">
+          <!-- Technology Stack #1: Languages -->
+          <div class="tech">
+            <h2>Languages</h2>
+            <i class="devicon-html5-plain-wordmark colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-typescript-plain colored"></i>
+            <i class="devicon-php-plain colored"></i>
+            <i class="devicon-python-plain colored"></i>
+            <i class="devicon-solidity-plain"></i>
+            <i class="devicon-rust-plain colored"></i>
+          </div>
 
-        <!-- Technology Stack #3: Back-End -->
-        <div class="tech">
-          <h2>Back-End</h2>
-          <i class="devicon-nodejs-plain colored"></i>
-          <i class="devicon-express-original-wordmark colored"></i>
-          <i class="devicon-nestjs-plain colored"></i>
-          <i class="devicon-laravel-plain-wordmark colored"></i>
-          <i class="devicon-mysql-plain-wordmark colored"></i>
-          <i class="devicon-postgresql-plain-wordmark colored"></i>
-          <i class="devicon-mongodb-plain-wordmark colored"></i>
-        </div>
+          <!-- Technology Stack #2: Front-End -->
+          <div class="tech">
+            <h2>Front-End</h2>
+            <i class="devicon-css3-plain-wordmark colored"></i>
+            <i class="devicon-sass-original colored"></i>
+            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+            <i class="devicon-jquery-plain-wordmark colored"></i>
+            <i class="devicon-tailwindcss-plain colored"></i>
+            <i class="devicon-react-original-wordmark colored"></i>
+            <i class="devicon-redux-original colored"></i>
+            <i class="devicon-nextjs-original colored"></i>
+            <i class="devicon-vuejs-plain-wordmark colored"></i>
+            <i class="devicon-materialui-plain colored"></i>
+          </div>
 
-        <!-- Technology Stack #4: Tools -->
-        <div class="tech">
-          <h2>Tools</h2>
-          <i class="devicon-git-plain-wordmark"></i>
-          <i class="devicon-vscode-plain-wordmark colored"></i>
-          <i class="devicon-github-original colored"></i>
-          <i class="devicon-heroku-plain-wordmark colored"></i>
-          <i class="devicon-digitalocean-plain colored"></i>
-          <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
-          <i class="devicon-firebase-plain colored"></i>
-          <i class="devicon-trello-plain colored"></i>
-          <i class="devicon-photoshop-plain colored"></i>
-          <i class="devicon-figma-plain colored"></i>
+          <!-- Technology Stack #3: Back-End -->
+          <div class="tech">
+            <h2>Back-End</h2>
+            <i class="devicon-nodejs-plain colored"></i>
+            <i class="devicon-express-original-wordmark colored"></i>
+            <i class="devicon-nestjs-plain colored"></i>
+            <i class="devicon-laravel-plain-wordmark colored"></i>
+            <i class="devicon-mysql-plain-wordmark colored"></i>
+            <i class="devicon-postgresql-plain-wordmark colored"></i>
+            <i class="devicon-mongodb-plain-wordmark colored"></i>
+          </div>
+
+          <!-- Technology Stack #4: Tools -->
+          <div class="tech">
+            <h2>Tools</h2>
+            <i class="devicon-git-plain-wordmark"></i>
+            <i class="devicon-vscode-plain-wordmark colored"></i>
+            <i class="devicon-github-original colored"></i>
+            <i class="devicon-heroku-plain-wordmark colored"></i>
+            <i class="devicon-digitalocean-plain colored"></i>
+            <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+            <i class="devicon-firebase-plain colored"></i>
+            <i class="devicon-trello-plain colored"></i>
+            <i class="devicon-photoshop-plain colored"></i>
+            <i class="devicon-figma-plain colored"></i>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-      <div class="user-details">
-        <h1>My Projects</h1>
-      </div>
-
-      <div class="projects-container">
-        <!-- User Project #1: Personal Résumé Website -->
-        <div class="user-projects">
-          <div class="single-project">
-            <h3>Car Parts Service Platform</h3>
-            <div>
-              <picture>
-                <source
-                  type="image/png"
-                  srcset="./assets/img/carparts_1.png"
-                  alt="Car Parts"
-                />
-                <a
-                  class="project-link"
-                  target="_blank"
-                  href="https://www.carparts.com/"
-                >
-                  <img alt="Car Parts" src="./assets/img/carparts_1.png" />
-                </a>
-              </picture>
-            </div>
-          </div>
+      <div class="container">
+        <div class="user-details">
+          <h1>My Projects</h1>
         </div>
 
-        <div class="user-projects">
-          <div class="single-project">
-            <h3>Online Shopping Site</h3>
-            <div>
-              <picture>
-                <source
-                  type="image/png"
-                  srcset="./assets/img/hatliy.png"
-                  alt="hatliy"
-                />
-                <a
-                  class="project-link"
-                  target="_blank"
-                  href="https://www.hatliy.com/"
-                >
-                  <img alt="hatliy" src="./assets/img/hatliy.png" />
-                </a>
-              </picture>
+        <div class="projects-container">
+          <div class="user-projects">
+            <div class="single-project">
+              <h3>Car Parts Service Platform</h3>
+              <div class="img-container">
+                <picture>
+                  <source
+                    type="image/png"
+                    srcset="./assets/img/carparts_1.png"
+                    alt="Car Parts"
+                  />
+                  <a
+                    class="project-link"
+                    target="_blank"
+                    href="https://www.carparts.com/"
+                  >
+                    <img alt="Car Parts" src="./assets/img/carparts.png" />
+                  </a>
+                </picture>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="user-projects">
-          <div class="single-project">
-            <h3>NFT Mint Site</h3>
-            <div>
-              <picture>
-                <source
-                  type="image/png"
-                  srcset="./assets/img/cybershibas.png"
-                  alt="cybershibas"
-                />
-                <a
-                  class="project-link"
-                  target="_blank"
-                  href="https://cybershibas.com/"
-                >
-                  <img alt="cybershibas" src="./assets/img/cybershibas.png" />
-                </a>
-              </picture>
+          <div class="user-projects">
+            <div class="single-project">
+              <h3>E-commerce Website</h3>
+              <div class="img-container">
+                <picture>
+                  <source
+                    type="image/png"
+                    srcset="./assets/img/hatliy.png"
+                    alt="hatliy"
+                  />
+                  <a
+                    class="project-link"
+                    target="_blank"
+                    href="https://www.hatliy.com/"
+                  >
+                    <img alt="hatliy" src="./assets/img/hatliy.png" />
+                  </a>
+                </picture>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="user-projects">
-          <div class="single-project">
-            <h3>NFT Marketplace and Token Staking</h3>
-            <div>
-              <picture>
-                <source
-                  type="image/png"
-                  srcset="./assets/img/nftb.png"
-                  alt="nftb"
-                />
-                <a class="project-link" target="_blank" href="https://nftb.io/">
-                  <img alt="nftb" src="./assets/img/nftb.png" />
-                </a>
-              </picture>
+          <div class="user-projects">
+            <div class="single-project">
+              <h3>Insurance Service Platform</h3>
+              <div class="img-container">
+                <picture>
+                  <source
+                    type="image/png"
+                    srcset="./assets/img/veronicas.png"
+                    alt="veronicas"
+                  />
+                  <a
+                    class="project-link"
+                    target="_blank"
+                    href="https://veronicasquote.com/"
+                  >
+                    <img alt="veronicas" src="./assets/img/veronicas.png" />
+                  </a>
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="user-projects">
+            <div class="single-project">
+              <h3>NFT Marketplace and Token Staking</h3>
+              <div class="img-container">
+                <picture>
+                  <source
+                    type="image/png"
+                    srcset="./assets/img/nftb.png"
+                    alt="nftb"
+                  />
+                  <a
+                    class="project-link"
+                    target="_blank"
+                    href="https://nftb.io/"
+                  >
+                    <img alt="nftb" src="./assets/img/nftb.png" />
+                  </a>
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="user-projects">
+            <div class="single-project">
+              <h3>Online Shopping Site</h3>
+              <div class="img-container">
+                <picture>
+                  <source
+                    type="image/png"
+                    srcset="./assets/img/gyapu.png"
+                    alt="nftb"
+                  />
+                  <a
+                    class="project-link"
+                    target="_blank"
+                    href="https://www.gyapu.com/"
+                  >
+                    <img alt="gyapu" src="./assets/img/gyapu.png" />
+                  </a>
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="user-projects">
+            <div class="single-project">
+              <h3>NFT Mint Dapp</h3>
+              <div class="img-container">
+                <picture>
+                  <source
+                    type="image/png"
+                    srcset="./assets/img/rdbp.png"
+                    alt="RDBP"
+                  />
+                  <a
+                    class="project-link"
+                    target="_blank"
+                    href="https://duck.art/"
+                  >
+                    <img alt="RDBP" src="./assets/img/rdbp.png" />
+                  </a>
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="user-projects">
+            <div class="single-project">
+              <h3>Landscaping Service Platform</h3>
+              <div class="img-container">
+                <picture>
+                  <source
+                    type="image/png"
+                    srcset="./assets/img/jdlandscaping.png"
+                    alt="jdlandscaping"
+                  />
+                  <a
+                    class="project-link"
+                    target="_blank"
+                    href="https://jdlandscaping.net/"
+                  >
+                    <img
+                      alt="jdlandscaping"
+                      src="./assets/img/jdlandscaping.png"
+                    />
+                  </a>
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="user-projects">
+            <div class="single-project">
+              <h3>DeFi Platform on Ethereum and Binance</h3>
+              <div class="img-container">
+                <picture>
+                  <source
+                    type="image/png"
+                    srcset="./assets/img/gainpool.png"
+                    alt="gainpool"
+                  />
+                  <a
+                    class="project-link"
+                    target="_blank"
+                    href="http://gainpool.io/"
+                  >
+                    <img alt="gainpool" src="./assets/img/gainpool.png" />
+                  </a>
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="user-projects">
+            <div class="single-project">
+              <h3>Wedding Band Promotion & Reservation</h3>
+              <div class="img-container">
+                <picture>
+                  <source
+                    type="image/png"
+                    srcset="./assets/img/redsoda.png"
+                    alt="redsoda"
+                  />
+                  <a
+                    class="project-link"
+                    target="_blank"
+                    href="https://redsoda.com/"
+                  >
+                    <img alt="redsoda" src="./assets/img/redsoda.png" />
+                  </a>
+                </picture>
+              </div>
             </div>
           </div>
         </div>
@@ -353,7 +479,6 @@
             action="https://formspree.io/f/mlevdrdj"
             method="POST"
             class="contact__form"
-            onsubmit="alert('hi')"
           >
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
